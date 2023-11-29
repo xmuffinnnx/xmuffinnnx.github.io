@@ -9,14 +9,34 @@
 
 <body>
     <h1>Sigh Counter</h1>
-    <p>Xinze: <span id="count-xinze">0</span> <button onclick="incrementSighCount('xinze')">Sigh</button></p>
-    <p>Jolin: <span id="count-jolin">0</span> <button onclick="incrementSighCount('jolin')">Sigh</button></p>
-    <p>Joshua: <span id="count-joshua">0</span> <button onclick="incrementSighCount('joshua')">Sigh</button></p>
-    <p>Sean: <span id="count-sean">0</span> <button onclick="incrementSighCount('sean')">Sigh</button></p>
-    <p>Jon: <span id="count-jon">0</span> <button onclick="incrementSighCount('jon')">Sigh</button></p>
-    <p>Darius: <span id="count-darius">0</span> <button onclick="incrementSighCount('darius')">Sigh</button></p>
+    <p>Xinze: <span id="count-xinze">0</span>
+        <button onclick="incrementSighCount('xinze')">+</button>
+        <button onclick="decrementSighCount('xinze')">-</button>
+    </p>
+    <p>Jolin: <span id="count-jolin">0</span>
+        <button onclick="incrementSighCount('jolin')">+</button>
+        <button onclick="decrementSighCount('jolin')">-</button>
+    </p>
+    <p>Joshua: <span id="count-joshua">0</span>
+        <button onclick="incrementSighCount('joshua')">+</button>
+        <button onclick="decrementSighCount('joshua')">-</button>
+    </p>
+    <p>Sean: <span id="count-sean">0</span>
+        <button onclick="incrementSighCount('sean')">+</button>
+        <button onclick="decrementSighCount('sean')">-</button>
+    </p>
+    <p>Jon: <span id="count-jon">0</span>
+        <button onclick="incrementSighCount('jon')">+</button>
+        <button onclick="decrementSighCount('jon')">-</button>
+    </p>
+    <p>Darius: <span id="count-darius">0</span>
+        <button onclick="incrementSighCount('darius')">+</button>
+        <button onclick="decrementSighCount('darius')">-</button>
+    </p>
     <p>Total: <span id="total-count">0</span></p>
 
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"></script>
     <script src="counter.js"></script>
 </body>
 
