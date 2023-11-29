@@ -20,6 +20,7 @@ for (const person in counts) {
 function incrementSighCount(person) {
     counts[person]++;
     updateCount(person);
+    updateTotalCount();
     // Save counts to localStorage
     localStorage.setItem(person, counts[person]);
 }
@@ -28,4 +29,11 @@ function incrementSighCount(person) {
 function updateCount(person) {
     const countElement = document.getElementById(`count-${person}`);
     countElement.textContent = counts[person];
+}
+
+// Function to update total count
+function updateTotalCount() {
+    const totalCountElement = document.getElementById('total-count');
+    const totalCount = Object.values(counts).reduce((sum, count) => sum + count, 0);
+    totalCountElement.textContent = totalCount;
 }
